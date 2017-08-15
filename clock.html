@@ -75,9 +75,15 @@
 
 
 <script>
+const secondHnad = document.querySelector('.second-hand');
+
 function setDate(){
     const now = new Date();
     const seconds = now.getSeconds();
+    // Add 90 to offset transform 90 deg
+    const secondDegrees = ((seconds / 60) * 360) + 90; 
+    secondHnad.style.transform = `rotate(${secondsDegrees}deg)`;
+    console.log(seconds);
 }
 
 // Run every second function
