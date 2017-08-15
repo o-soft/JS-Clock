@@ -45,7 +45,7 @@
       box-shadow:
         0 0 0 4px rgba(0,0,0,0.1),
         inset 0 0 0 3px #EFEFEF,
-        inset 0 0 10px black,
+        inset 0 0 10px white,
         0 0 10px rgba(0,0,0,0.2);
     }
 
@@ -59,9 +59,16 @@
     .hand {
       width:50%;
       height:6px;
-      background:black;
+      background:white;
       position: absolute;
       top:50%;
+      transform-origin: 100;
+      transform: rotate(90deg);
+      /*transition itself around */
+      transition: all 0.05s;
+      /*Create realistic clock transition  */
+      transition-timing-function: cubic-bezier(0.1, 2.7. 0.58, 1);
+
     }
 
   </style>
