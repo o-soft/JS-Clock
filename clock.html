@@ -71,11 +71,18 @@
 
     }
 
-  </style>
-
-  <script>
+</style>
 
 
-  </script>
+<script>
+function setDate(){
+    const now = new Date();
+    const seconds = now.getSeconds();
+}
+
+// Run every second function
+setInterval(setDate, 1000);
+
+</script>
 </body>
 </html>
